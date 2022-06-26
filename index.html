@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>newUserForm</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="main-header">
+      <p>тут header</p>
+    </header>
+
+    <!-- TODO потом убрать инлайновый стиль -->
+    <main class="main" style="display: flex; justify-content: center; padding: 20px">
+
+      <form class="main-form" action="#" name="mainForm" novalidate>
+
+        <!-- ! autocomplete глючит -->
+        <!--  можно добавить title, но так не интересно -->
+        <div class="form__group">
+          <label for="nameField">Name</label>
+          <input class="input input-name" id="nameField" type="text" name="name" placeholder="Elon" autocomplete="off">
+          <div class="error visually-hidden">Введите корректное имя</div>
+        </div>
+
+        <div class="form__group">
+          <label for="lastnameField">Last name</label>
+          <input class="input input-lastname" id="lastnameField" type="text" name="lastName" placeholder="Mask">
+          <div class="error visually-hidden">Введите корректную фамилию</div>
+        </div>
+
+        <div class="form__group">
+          <label for="birthdayField">Birthday</label>
+          <input class="input input-birthday" id="birthdayField" type="date" name="birthday" placeholder="09.03.1987">
+          <div class="error visually-hidden">Введите корректную дату</div>
+        </div>
+
+        <div class="form__group">
+          <label for="emeilField">Email</label>
+          <input class="input input-email" id="emeilField" type="email" name="email" placeholder="www@www.com">
+          <div class="error visually-hidden">Введите корректный имейл</div>
+        </div>
+
+        <div class="form__group">
+          <label for="phoneField">Phone</label>
+          <input class="input input-phone" id="phoneField" type="tel" name="phone" placeholder="+380630483585">
+          <div class="error visually-hidden">Введите корректный номер телефона</div>
+        </div>
+
+        <div class="form__group form__group-password">
+          <label for="passwordField">Password</label>
+          <div class="eye eye--close"></div>
+          <input class="input input-password password password-group" id="passwordField" type="password" name="password"
+            placeholder="********" autocomplete="no">
+          <div class="error visually-hidden">Введите корректный пароль</div>
+        </div>
+
+        <div class="form__group form__group-password">
+          <label for="passwordRepeatField">Password repeat</label>
+          <div class="eye eye--close"></div>
+          <input class="input input-password-repeat password-group" id="passwordRepeatField" type="password"
+            name="passwordRepeat" placeholder="********" autocomplete="no">
+          <div class="error visually-hidden">Пароли не совпадают</div>
+        </div>
+
+        <button class="btn" type="submit">
+          Submit form
+        </button>
+      </form>
+
+    </main>
+
+
+
+    <footer class="main-footer">
+      <p>тут footer</p>
+    </footer>
+
+  </div>
+  <script src="js/formNewVersion.js"></script>
+</body>
+
+</html>

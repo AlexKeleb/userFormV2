@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* минимальное обнуление */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: rgba(80, 80, 80, 0.3);
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px #ccc;
+          box-shadow: 0 2px #ccc;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: top;
+}
+
+.btn:hover {
+  background-color: #6c87b5;
+}
+
+.btn:active {
+  background-color: darkgrey !important;
+}
+
+.btn:focus-visible {
+  -webkit-box-shadow: 0 0 0 3px lightskyblue;
+          box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.btn:disabled {
+  background-color: darkgrey;
+  pointer-events: none;
+}
+
+/* --- общие стили --- */
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-header {
+  padding: 20px;
+  background-color: brown;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-section {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+          box-shadow: 1px 1px 1px 1px #ccc;
+  background-color: #fff;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.main-title-subtitile {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form__group label {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-form label + input {
+  margin-top: 5px;
+}
+
+.form__group input {
+  color: #fff;
+  background-color: rgba(135, 130, 130, 0.5);
+  border-radius: 15px;
+  padding: 5px 10px;
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+.form__group input#checkbox {
+  width: auto;
+  vertical-align: bottom;
+}
+
+.main-form input::-webkit-input-placeholder {
+  color: #f2eded;
+}
+
+.main-form input:-ms-input-placeholder {
+  color: #f2eded;
+}
+
+.main-form input::-ms-input-placeholder {
+  color: #f2eded;
+}
+
+.main-form input::placeholder {
+  color: #f2eded;
+}
+
+.main-form .btn {
+  margin-top: 15px;
+}
+
+.main-footer {
+  background-color: brown;
+  padding: 20px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.error {
+  margin-bottom: 5px;
+  padding-left: 5px;
+  height: 15px;
+  color: red;
+}
+
+.eye {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+.eye::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: 2%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.eye--open:after {
+  background-image: url("../img/eye--open.svg");
+}
+
+.eye--close:after {
+  background-image: url("../img/eye--close.svg");
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
